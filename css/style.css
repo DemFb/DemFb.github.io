@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  /* background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 100-6 3 3 0 000 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 100-6 3 3 0 000 6zm10 0a3 3 0 100-6 3 3 0 000 6zM53 41a3 3 0 100-6 3 3 0 000 6zm10 0a3 3 0 100-6 3 3 0 000 6zm10 0a3 3 0 100-6 3 3 0 000 6zm-30 0a3 3 0 100-6 3 3 0 000 6zm-28-8a5 5 0 00-10 0h10zm10 0a5 5 0 01-10 0h10zM56 5a5 5 0 00-10 0h10zm10 0a5 5 0 01-10 0h10zm-3 46a3 3 0 100-6 3 3 0 000 6zm10 0a3 3 0 100-6 3 3 0 000 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z' fill='%234276a7' fill-opacity='.015'/%3E%3C/svg%3E"); */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.center-bot {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.margin-5 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* WHITE & GRAY PAGE */
+.white-page {
+  background-color: white;
+}
+
+.gray-page {
+  background-color: #f6f6f6 !important;
+}
+/* RESEAU SOCIAUX */
+.align-social a {
+  text-align: center;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.align-social a:hover {
+  text-align: center;
+  padding-bottom: 0px;
+  color: #dedede !important;
+}
+.space {
+  padding-right: 20px;
+}
+#header .image img {
+  border-radius: 100%;
+  display: block;
+  width: 13em;
+}
+/* IMAGE EN CERCLE - HEADER */
+.img-circular {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/profil.jpg");
+  background-size: cover;
+  display: block;
+}
+/* TEXTE TITRE H4 */
+
+.texte-base {
+  color: rgba(40, 40, 40, 0.702);
+  line-height: 1.2;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+.texte-base::after {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 2px;
+  background: #000;
+  margin-left: 12px;
+  margin-top: 9px;
+}
+
+/* HEADER */
+#header {
+  background-color: #444;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8em 0 6em 0;
+  background-image: url("../images/banner-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  cursor: default;
+}
+#header .image {
+  border-radius: 100%;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  padding: 0.5em;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+}
+/* H1 NOM PRENOM */
+#header h1 {
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 0;
+}
+/* BARRE HORIZONTAL */
+#header hr {
+  margin-bottom: 20px;
+  width: 30%;
+}
+/* CORRECTION POUR LA SEPARATION RESEAU TEXTE */
+#header .align-social {
+  margin-top: 20px;
+}
+/* PLEIN ECRAN */
+#header.alt {
+  height: 20em;
+  min-height: 100vh;
+}
+
+/* P1 TEXTE */
+#header.alt p {
+  text-transform: uppercase;
+  letter-spacing: 0.325rem;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 0 1.25em;
+  text-align: center;
+}
+/* PAS BESOIN DE QUERY TOUS EST DEJA ADAPTE */
+/* CORPS DE LA PARTIE ABOUT */
+#aboutIt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* DIV IMAGE + BOX */
+#photoAbout {
+  width: 70%;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 32%;
+}
+
+/* IMAGE */
+#photo img {
+  position: absolute;
+  width: 70%;
+  z-index: 1;
+  margin: 15%;
+}
+
+/* BOX */
+#boxPhoto img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 73%;
+}
+
+/* DIV DES 2 TEXTES */
+#textAbout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* TITRE TEXTE 1 (GAUCHE) */
+#aboutIt h2 {
+  text-align: left;
+}
+
+/* DIV TEXTE 1 (GAUCHE) */
+#paragraphPropos1 {
+  width: 60%;
+}
+
+
+/* DIV TEXTE 2 (DROITE) */
+#paragraphPropos2 {
+  width: 30%;
+}
+
+#paragraphPropos2 ul {
+  list-style: none;
+  font-style: italic;
+  color: grey;
+}
+
+#paragraphPropos2 a {
+  color: grey;
+  text-decoration: none;
+}
+#paragraphPropos2 a :hover{
+  color: black;
+  text-decoration: none;
+  transition: ease 1s;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1264px) {
+  #textAbout {
+    margin-bottom: 5%;
+  }
+  #paragraphPropos2 {
+    margin: 0% 10% 0% 5%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #photoAbout,
+  #boxPhoto img,
+  #photoAbout img {
+    display: none;
+  }
+
+  #paragraphPropos2 {
+    margin: 5% 0% 0% -30%;
+  }
+
+  #textAbout {
+    flex-direction: column;
+  }
+}
+
+/* SKILL SECTION */
+
+.skillSection {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+/* THIS BLOCK CONTAINS skillPresentation AND skillLvl */
+.blockSkill {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+
+/* DIV CLASS skillPresentation - BLOCK TITLE AND PARAGRAPH */
+
+.skillPresentation{
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillPresentation h2{
+  padding-left: 13%;
+  padding-bottom: 3%;
+}
+
+.skillPresentation p {
+  padding-left: 20%;
+  padding-bottom: 3%;
+}
+
+/* DIV CLASS skillLvl - BLOCK SKILLS BARS */
+
+.skillLvl {
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skill {
+  width: fit-content;
+  padding: 10px 5px 10px 5px;
+}
+
+.langage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.langage p {
+  font-weight: bold;
+}
+
+/* PROGRESS BAR */
+
+.bar {
+  height: 2em;
+  width: 450px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 0.3rem;
+}
+
+.progressBar1,
+.progressBar2,
+.progressBar3,
+.progressBar4,
+.progressBar5,
+.progressBar6 {
+  width: 450px;
+  height: 2em;
+  border-radius: 0.3rem;
+  opacity: 0;
+}
+
+/* BACKGROUND BROWSERS COMPATIBILITIES AND ANIMATIONS */
+
+.progressBar1 {
+  background: #7F7FD5;  
+  background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); 
+  background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); 
+  animation-delay: 0.5s;
+  animation: mymove1 6s ease forwards;
+}
+
+.progressBar2 {
+  background: #7474BF;  
+  background: -webkit-linear-gradient(to bottom, #348AC7, #7474BF);  
+  background: linear-gradient(to bottom, #348AC7, #7474BF); 
+  animation-delay: 1.5s;
+  animation: mymove1 6s ease forwards;
+}
+.progressBar3 {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  animation-delay: 2.5s;
+  animation: mymove3 6s ease forwards;
+}
+.progressBar4 {
+  background: #457fca;  
+  background: -webkit-linear-gradient(to left, #5691c8, #457fca);  
+  background: linear-gradient(to left, #5691c8, #457fca); 
+  
+  animation-delay: 3.5s;
+  animation: mymove2 6s ease forwards;
+}
+.progressBar5 {
+  background: #6190e8;
+  background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
+  background: linear-gradient(to right, #a7bfe8, #6190e8);
+  animation-delay: 4.5s;
+  animation: mymove3 6s ease forwards;
+}
+.progressBar6 {
+  background: #0575E6;  
+  background: -webkit-linear-gradient(to left, #021B79, #0575E6);  
+  background: linear-gradient(to left, #021B79, #0575E6); 
+  animation-delay: 5.5s;
+  animation: mymove3 6s ease forwards;
+}
+
+/* CSS ANIMATIONS WITH @KEYFRAMES */
+@keyframes mymove1 {
+  0% {
+    top: 0px;
+    opacity: 1;
+    width: 0px;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    width: 90%;
+  }
+}
+
+@keyframes mymove2 {
+  0% {
+    top: 0px;
+    opacity: 1;
+    width: 0px;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    width: 70%;
+  }
+}
+
+@keyframes mymove3 {
+  0% {
+    top: 0px;
+    opacity: 1;
+    width: 0px;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    width: 50%;
+  }
+}
+/* RESPONSIVE FOR SCREENS < 1040px */
+@media screen and (max-width: 1040px){
+  .blockSkill {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .skillPresentation{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skillPresentation h2{
+    padding-left: 0%;
+    padding-bottom: 20px;
+    padding-right: 2%;
+  }
+  
+  .skillPresentation p {
+   display: flex;
+   justify-content: center;
+   padding: 0px 10% 20px 10%;
+  }
+  
+  .skillLvl {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill {
+    width: 95%;
+    padding: 10px 5px 10px 5px;
+  }
+
+  .bar {
+    height: 2em;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0.3rem;
+  }
+  
+  .progressBar1,
+  .progressBar2,
+  .progressBar3,
+  .progressBar4,
+  .progressBar5,
+  .progressBar6 {
+    width: 100%;
+    height: 2em;
+    border-radius: 0.3rem;
+    opacity: 0;
+  }
+}
+
+/* SKILL SECTION */
+/* CASCADE */
+
+/*  SECTION PRINCIPALE */
+#timeline-section {
+  background-color: white;
+  color: white;
+  padding-bottom: 30px;
+}
+
+/* TIMELINE PAR CONTAINER */
+.timeline-container {
+  min-height: 100vh;
+  margin-top: 30px;
+  /*padding: 100px;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-titre {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+/* CASE TIMELINE */
+.timeline ul li {
+  padding: 20px;
+  background-color: #708ee9;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.timeline-content .date {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* AFFICHAGE MOBILE */
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #708ee9;
+  }
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 15px 0px 15px 15px;
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 15px 15px 15px;
+  }
+
+  /* POINT SUR LA TIMELINE */
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #dedede;
+    border-radius: 50%;
+    top: 0;
+  }
+  /* CASES PAIRES ET IMPAIRES */
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+
+  .timeline ul li:hover::after {
+    background-color: #708ee9;
+  }
+
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+    color: black;
+  }
+}
+/* CASCADE */
+/* PROJET */
+
+.projet-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+/* BLOC DE BASE */
+.bloc-projet {
+  background-color: white;
+  border-radius: 2em;
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  text-align: center;
+  line-height: 1em;
+  transition: all 0.3s ease-in-out;
+}
+/* ANIMATION EN ACTIF */
+.bloc-projet:hover {
+  box-shadow: 0 5px 15px -5px #333;
+  transform: translateY(-6px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXTE BLOC */
+.projet-flex h1 {
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+  background-color: red;
+  font-size: 16px;
+  font-weight: 300px;
+}
+
+/* AFFICHAGE IMAGE */
+.bloc-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.projet-flex img {
+  width: 100%;
+  max-height: 150px;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+}
+
+/* AFFICHAGE ET DISPOSITION TEXTE */
+.bloc-text {
+  padding: 15px;
+}
+
+.bloc-tag {
+  color: #000;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.3em;
+  color: #708ee9;
+}
+
+.bloc-titre h4 {
+  color: #000;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.bloc-titre a {
+  text-decoration: none;
+}
+
+.bloc-titre a :hover {
+  text-decoration: none;
+  color: gray;
+  transition: ease 0.5s;
+}
+
+.bloc-date {
+  color: #939393;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.bloc-description {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.bloc-auteur {
+  margin-top: 30px;
+  color: #939393;
+  text-align: left;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/* PROJET */
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #2e3149;
+  /* overflow: hidden; */
+}
+
+/* ADAPTATION POUR LES RESEAUX AU FOOTER */
+.footer .align-social {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* AFFICHAGE TEXTE ET ALIGNEMENT */
+.footer .copyright {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 13px;
+}
+/* FOOTER */
